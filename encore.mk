@@ -246,3 +246,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product-if-exists, vendor/bn/encore/encore-vendor.mk)
 #$(call inherit-product-if-exists, hardware/ti/wpan/ti-wpan-products.mk)
 #$(call inherit-product-if-exists, device/ti/proprietary-open/wl12xx/wlan/wl12xx-wlan-fw-products.mk)
+
+# Fix boot animation
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bootanimation/600.zip:system/media/bootanimation.zip
